@@ -12,29 +12,28 @@ pyreaper
 Installation guide
 ------------------
 
-The latest release is availabe on pypi. You can install it by:
+Before installing, first make sure you have the Python packages ``numpy`` and
+``cython`` installed.  For example, you can install these packages via the
+command:
 
 .. code::
 
-    pip install pyreaper
+   pip install numpy cython
 
-Note that you have to install ``numpy`` to build C-extensions.
-
-If yout want the latest development version, assuming you have ``cython`` installed,
-run:
+Then run:
 
 .. code::
 
-   pip install git+https://github.com/r9y9/pyreaper
+   pip install git+https://github.com/voicesauce/pyreaper
 
-or:
+or instead of using pip, do:
 
 .. code::
 
-   git clone https://github.com/r9y9/pyreaper
+   git clone https://github.com/voicesauce/pyreaper
    cd pyreaper
    git submodule update --init --recursive
-   python setup.py develop # or install
+   python setup.py develop # OR pip setup.py install
 
 This should resolve the package dependencies and install ``pyreaper`` property.
 
